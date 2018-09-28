@@ -3,7 +3,6 @@
     <router-view />
 </div>
 </template>
-
 <style>
 :root {
     --spacing: 16px;
