@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Menu</router-link> |
+      <router-link to="/alphabet">Alfabet</router-link> |
+      <router-link to="/numbers">Cyfry</router-link> |
+      <router-link to="/adding">Dodawanie</router-link>
     </div>
     <router-view/>
   </div>
 </template>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,3 +20,4 @@
   margin-top: 60px;
 }
 </style>
+
