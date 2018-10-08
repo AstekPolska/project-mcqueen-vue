@@ -14,17 +14,17 @@ export default new Router({
     {
       path: '/alphabet',
       name: 'Alphabet',
-      component: () => import('./views/Alphabet.vue')
+      component: () => import('./views/alphabet/Alphabet.vue')
     },
     {
       path: '/numbers',
       name: 'Numbers',
-      component: () => import('./views/Numbers.vue')
+      component: () => import('./views/numbers/Numbers.vue')
     },
     {
       path: '/adding',
       name: 'Adding',
-      component: () => import('./views/Adding.vue')
+      component: () => import('./views/adding/Adding.vue')
     },
   ]
 })
