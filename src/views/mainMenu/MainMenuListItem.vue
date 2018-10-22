@@ -1,14 +1,12 @@
 <template>
 <div>
-    Main menu
+
 </div>
 </template>
 
 <script>
-import MainMenuListItem from './MainMenuListItem.vue';
-
 export default {
-    name: 'MainMenu'
+    name: 'MainMenuListItem'
 }
 </script>
 
