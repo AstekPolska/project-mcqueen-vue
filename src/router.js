@@ -9,7 +9,7 @@ export default new Router({
     {
       path: '/',
       name: 'MainMenu',
-      component: () => import('./views/MainMenu.vue')
+      component: () => import('./views/mainMenu/MainMenu.vue')
     },
     {
       path: '/alphabet',
