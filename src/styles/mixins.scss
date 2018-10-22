@@ -1,3 +1,6 @@
+@import './dimens';
+@import './colors';
+
 @mixin noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -5,4 +8,38 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+@mixin baseAppBar {
+    width: 100%;
+    height: $appBarSize;
+    background-color: $colorPrimary;
+}
+
+@mixin verticalBoxShadow($vOfset) {
+    @each $prefix in -moz-, -webkit-, null {
+        #{$prefix}box-shadow: 0 $vOfset $vOfset*4 $vOfset/-2 black;
+    }
+}
+
+$desktop: "(min-width: 1024px)";
+$tablet: "(min-width: " + $phoneMaxHeight + ")";
+$phone: "(min-width: 0px)";
+
+@mixin screen($size){
+    @if $size == desktop{
+        @media only screen and #{$desktop}{
+            @content;
+        }
+    }
+    @else if $size == tablet{
+        @media only screen and #{$tablet}{
+            @content;
+        }
+    }
+    @else if $size == phone{
+        @media only screen and #{$phone}{
+            @content;
+        }
+    }
 }
