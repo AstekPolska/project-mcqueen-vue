@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ListItem from './AlphabetLettersBarListItem.vue';
+import AlphabetLettersBarListItem from './AlphabetLettersBarListItem.vue';
 
 export default {
     name: 'AlphabetLettersBar'

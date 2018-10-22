@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import LettersBar from './AlphabetDialogLettersBar.vue';
-import MainSpace from './AlphabetDialogMainSpace.vue';
-import SpellBar from './alphabetDialogSpellBar/AlphabetDialogSpellBar.vue';
-import ImagesSpace from './AlphabetDialogImagesSpace.vue';
+import AlphabetDialogLettersBar from './AlphabetDialogLettersBar.vue';
+import AlphabetDialogMainSpace from './AlphabetDialogMainSpace.vue';
+import AlphabetDialogSpellBar from './alphabetDialogSpellBar/AlphabetDialogSpellBar.vue';
+import AlphabetDialogImagesSpace from './AlphabetDialogImagesSpace.vue';
 
 export default {
     name: 'AlphabetDialog'

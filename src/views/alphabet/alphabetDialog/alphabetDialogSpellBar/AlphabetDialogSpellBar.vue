@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import SpellBarLetter from './AlphabetDialogSpellBarLetter.vue';
+import AlphabetDialogSpellBarLetter from './AlphabetDialogSpellBarLetter.vue';
 
 export default {
     name: 'AlphabetDialogSpellBar'

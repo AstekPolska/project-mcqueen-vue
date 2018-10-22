@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ImagesSpaceItem from'./AlphabetImagesSpaceItem.vue';
+import AlphabetImagesSpaceItem from'./AlphabetImagesSpaceItem.vue';
 
 export default {
     name: 'AlphabetImagesSpace'

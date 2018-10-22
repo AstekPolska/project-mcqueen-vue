@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import LettersBar from './alphabetLettersBar/AlphabetLettersBar.vue';
-import MainSpace from './AlphabetMainSpace.vue';
-import SpellBar from './AlphabetSpellBar.vue';
-import ImagesSpace from './alphabetImagesSpace/AlphabetImagesSpace.vue';
-import Dialog from './alphabetDialog/AlphabetDialog.vue';
+import AlphabetLettersBar from './alphabetLettersBar/AlphabetLettersBar.vue';
+import AlphabetMainSpace from './AlphabetMainSpace.vue';
+import AlphabetSpellBar from './AlphabetSpellBar.vue';
+import AlphabetImagesSpace from './alphabetImagesSpace/AlphabetImagesSpace.vue';
+import AlphabetDialog from './alphabetDialog/AlphabetDialog.vue';
 
 export default {
     name: 'Alphabet'
