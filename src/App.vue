@@ -1,23 +1,23 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Menu</router-link> |
-      <router-link to="/alphabet">Alfabet</router-link> |
-      <router-link to="/numbers">Cyfry</router-link> |
-      <router-link to="/adding">Dodawanie</router-link>
-    </div>
-    <router-view/>
-  </div>
+<div id="app">
+    <router-view />
+</div>
 </template>
 
 <style lang="scss">
+@import './styles/colors';
+
+body {
+    margin: 0;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    width: 100vw;
+    height: 100vh;
+    background: $colorPrimaryExtraLight;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    color: white;
 }
 </style>
-
