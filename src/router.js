@@ -26,5 +26,9 @@ export default new Router({
       name: 'Adding',
       component: () => import('./views/adding/Adding.vue')
     },
+    {
+      path: '/*',
+      redirect: '/'
+    }
   ]
 })
