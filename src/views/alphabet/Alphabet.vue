@@ -1,9 +1,9 @@
 <template>
 <div>
-    <LettersBar />
-    <MainSpace />
-    <SpellBar />
-    <ImagesSpace />
+    <AlphabetLettersBar />
+    <AlphabetMainSpace />
+    <AlphabetSpellBar />
+    <AlphabetImagesSpace />
     <AlphabetDialog />
 </div>
 </template>
@@ -16,7 +16,14 @@ import AlphabetImagesSpace from './alphabetImagesSpace/AlphabetImagesSpace.vue';
 import AlphabetDialog from './alphabetDialog/AlphabetDialog.vue';
 
 export default {
-    name: 'Alphabet'
+    name: 'Alphabet',
+    components: {
+        AlphabetLettersBar,
+        AlphabetMainSpace,
+        AlphabetSpellBar,
+        AlphabetImagesSpace,
+        AlphabetDialog
+    }
 }
 </script>
 
