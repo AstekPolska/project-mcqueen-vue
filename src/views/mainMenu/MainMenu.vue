@@ -2,8 +2,8 @@
 <div class="main-menu">
     <div class="main-menu__list">
         <MainMenuListItem 
-            v-for="(page, index) in pages"
-            :key="index"
+            v-for="page in pages"
+            :key="page.path"
             :pagePath="page.path"
             :pageName="page.name.toUpperCase()"
         />
