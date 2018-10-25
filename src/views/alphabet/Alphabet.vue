@@ -1,9 +1,9 @@
 <template>
 <div>
-    <LettersBar />
-    <MainSpace />
-    <SpellBar />
-    <ImagesSpace />
+    <AlphabetLettersBar />
+    <AlphabetMainSpace />
+    <AlphabetSpellBar />
+    <AlphabetImagesSpace />
     <AlphabetDialog />
 </div>
 </template>
