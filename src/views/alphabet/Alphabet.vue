@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="alphabet">
     <AlphabetLettersBar />
     <AlphabetMainSpace />
     <AlphabetSpellBar />
@@ -28,5 +28,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.alphabet{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
 </style>

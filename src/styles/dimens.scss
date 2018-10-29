@@ -1,7 +1,13 @@
-$phoneMaxHeight: 480px;
+$tabletMaxWidth: 1024px;
+$phabletMaxWidth: 720px;
+$phoneMaxWidth: 480px;
+
 $menuItemMaxWidth: 480px;
 
 $spacing: 16px;
 $spacingBig: 32px;
 $spacingSmall: 8px;
+
 $appBarSize: 56px;
+$appBarSizeSmall: calc(#{$appBarSize} * 0.8);
+$appBarShadowBlur: 8px;

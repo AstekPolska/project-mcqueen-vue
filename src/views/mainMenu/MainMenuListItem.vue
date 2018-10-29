@@ -29,9 +29,13 @@ export default {
 $borderRadius: $spacing;
 
 .main-menu__list-item {
+    width: calc(100% - 2 * #{$spacingBig});
     height: auto;
+    margin: $spacingBig;
+    border-radius: $spacing;
     background: $colorPrimary;
     transition: $animationTime;
+    @include verticalBoxShadow(4px);
     @include noselect;
 
     @include screen('phone') {
@@ -39,13 +43,6 @@ $borderRadius: $spacing;
         margin: $spacingSmall 0;
         border-radius: 0;
         @include verticalBoxShadow(1px);
-    }
-
-    @include screen('tablet') {
-        width: calc(100% - 2 * #{$spacingBig});
-        margin: $spacingBig;
-        border-radius: $spacing;
-        @include verticalBoxShadow(4px);
     }
 
     a {
