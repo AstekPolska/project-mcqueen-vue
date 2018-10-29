@@ -14,6 +14,9 @@
     width: 100%;
     height: $appBarSize;
     background-color: $colorPrimary;
+    @each $prefix in -moz-, -webkit-, null {
+        #{$prefix}box-shadow: 0 0 $appBarShadowBlur 0 black;
+    }
 }
 
 @mixin verticalBoxShadow($vOfset) {
@@ -22,24 +25,57 @@
     }
 }
 
-$desktop: "(min-width: 1024px)";
-$tablet: "(min-width: " + $phoneMaxHeight + ")";
-$phone: "(min-width: 0px)";
+$tablet: "(max-width: " + $tabletMaxWidth + ")";
+$phablet: "(max-width: " + $phabletMaxWidth + ")";
+$phone: "(max-width: " + $phoneMaxWidth + ")";
 
 @mixin screen($size){
-    @if $size == desktop{
-        @media only screen and #{$desktop}{
+    @if $size == tablet{
+        @media screen and #{$tablet}{
             @content;
         }
     }
-    @else if $size == tablet{
-        @media only screen and #{$tablet}{
+    @else if $size == phablet{
+        @media screen and #{$phablet}{
             @content;
         }
     }
     @else if $size == phone{
-        @media only screen and #{$phone}{
+        @media screen and #{$phone}{
             @content;
         }
+    }
+}
+
+@mixin lanscapeMode{
+    @media screen and (orientation:landscape){
+        @content;
+    }
+}
+
+@mixin verticalStyledScrollBar{
+    &:hover::-webkit-scrollbar {
+        display: initial;
+    }
+    
+    &::-webkit-scrollbar {
+        width: calc(#{$appBarSize} * 0.15);
+        display: none;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: $scrollbarTrackBackground;
+    }
+    
+    &::-webkit-scrollbar-track:hover {
+        background: $scrollbarTrackBackgroundHover;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: $scrollbarThumbBackground;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background: $scrollbarThumbBackgroundHover;
     }
 }

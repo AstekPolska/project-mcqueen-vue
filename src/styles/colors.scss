@@ -6,7 +6,9 @@ $colorPrimaryExtraLight:#f2ffab;
 $colorAccent:   #790e8b;
 
 
-$scrollbarTrackBackground: transparentize(black, 0);
-$scrollbarTrackBackgroundHover: transparentize(black, .09);
-$scrollbarThumbBackground: transparentize(white, .13);
-$scrollbarThumbBackgroundHover: transparentize(white, .8);
+$scrollbarTrackBackground: rgba(black, 0);
+$scrollbarTrackBackgroundHover: rgba(black, .09);
+$scrollbarThumbBackground: rgba(white, .13);
+$scrollbarThumbBackgroundHover: rgba(white, .8);
+
+$itemHoverBackGround: rgba(black, .13);
